@@ -13,9 +13,8 @@ function sendV2(req, res, next) {
 }
 
 // Use Accept-Version
-// curl -s -H 'accept-version ~1' localhost:8080/saluton/Mondo
-// curl -s -H 'accept-version ~2' localhost:8080/saluton/Mondo
-// TODO: this isn't working
+// curl -s -H 'accept-version: ~1' localhost:8080/saluton/Mondo
+// curl -s -H 'accept-version: ~2' localhost:8080/saluton/Mondo
 var PATH = "/saluton/:name";
 
 server.get({
